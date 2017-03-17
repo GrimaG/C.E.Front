@@ -10,7 +10,7 @@ function insertValueTable() {
         document.getElementById("valor_unit").value = "";
         document.getElementById("qtd").value = "";
 		var sumTotal = document.getElementById("valor").value;
-		
+
         var table = document.getElementById("tabela");
         var row = table.insertRow(-1);
         var cell1 = row.insertCell(0);
@@ -18,7 +18,7 @@ function insertValueTable() {
         var cell3 = row.insertCell(2);
         var cell4 = row.insertCell(3);
 		var total_item = quantidade*valor_unit;
-		
+
 		document.getElementById("valor").value = sumTotal+total_item;
         cell1.innerHTML = desc;
 		cell2.innerHTML = quantidade;
@@ -56,13 +56,11 @@ function send(){
     }
 
     }
-	
-	
+
+
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", link, true);
 	xhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     xhttp.send(send_object);
-     window.alert("Ein viado com sucesso!")
+     window.alert("Ein viado com sucesso!");
 }
-
-
