@@ -52,7 +52,7 @@ function send(){
     if(selected_radio=="myserver"){
         link = "https://serene-wave-75438.herokuapp.com/pedidos";
     }else{
-        link = "";
+        link = "http://pedidos-webapi.herokuapp.com/pedidos/adiciona";
     }
 
     var xhttp = new XMLHttpRequest();
