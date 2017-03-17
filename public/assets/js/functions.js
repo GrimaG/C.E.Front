@@ -55,9 +55,6 @@ function send(){
         link = "";
     }
 
-    }
-
-
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", link, true);
 	xhttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
